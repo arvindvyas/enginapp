@@ -7,7 +7,6 @@ gem 'rails', '3.2.8'
 
 gem 'mysql2'
 gem 'pg'
-gem "eycap"
 
 
 # Gems used only for assets and not required
@@ -34,7 +33,7 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'

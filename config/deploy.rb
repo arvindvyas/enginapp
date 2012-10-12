@@ -29,7 +29,7 @@ default_run_options[:pty] = true # required for svn+ssh:// andf git:// sometimes
 set :real_revision, 			lambda { source.query_revision(revision) { |cmd| capture(cmd) } }
 
 
-task :healthyprice_staging do
+task :enginapp_production do
   role :web, '182.19.23.203'
   role :app, '182.19.23.203'
   role :db, '182.19.23.203' :primary => true
@@ -38,7 +38,7 @@ task :healthyprice_staging do
   set :dbpass,        'root'
   set :user,          'root'
   set :password,      'root'
-  #set :runner,        'hpuser'
+  set :runner,        'root'
   set :rails_env,     'production'
 end
 
